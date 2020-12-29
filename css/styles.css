@@ -34,6 +34,33 @@ body {
     border-bottom: 1px ridge rgb(184, 184, 184);
 }
 
-.content p {
+p {
     font-size: 1.25rem;
+}
+
+.bio-image {
+    background-repeat: no-repeat;
+    height: 900px;
+}
+
+#claudia {
+    background-image: url("/images/IMG_1148.JPG");
+    background-position: 80% 20%;
+}
+
+#bob {
+    background-image: url("/images/IMG_1181.JPG");
+    background-position: 32% 10%;
+}
+
+#ross {
+    background-image: url("/images/20181216_161358.jpg");
+    background-position: 95% 38%;
+}
+
+.bio-text {
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+    height: 900px;
+    overflow: auto;
 }
