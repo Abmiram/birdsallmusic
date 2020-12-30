@@ -1,8 +1,8 @@
-h1, h2 {
+h1, h2, h4 {
     font-family: 'Lobster Two', cursive, serif;
 }
 
-p {
+p, h5 {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
