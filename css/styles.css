@@ -64,3 +64,26 @@ p {
     height: 900px;
     overflow: auto;
 }
+
+@media only screen and (max-width: 1200px) {
+    #ross {
+        background-image: none;
+    }
+
+    #claudia {
+        background-image: none;
+    }
+
+    #bob {
+        background-image: none;
+    }
+
+    .bio-text {
+        height: 700px;
+        border-radius: .25rem;
+    }
+
+    .bio-image {
+        height: auto;
+    }
+}
