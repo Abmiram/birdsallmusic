@@ -1,89 +1,117 @@
-h1, h2, h4 {
-    font-family: 'Lobster Two', cursive, serif;
+h1,
+h2,
+h4 {
+  font-family: "Lobster Two", cursive, serif;
 }
 
-p, h5 {
-    font-family: 'Source Sans Pro', sans-serif;
+p,
+h5 {
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 h2 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 header {
-    background-image: url("../images/providence-doucet-wPaBwop_rSo-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url("../images/providence-doucet-wPaBwop_rSo-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 body {
-    background-color: antiquewhite;
+  background-color: antiquewhite;
 }
 
 .navbar {
-    background-color: rgb(107, 49, 49);
+  background-color: rgb(107, 49, 49);
 }
 
 .content {
-    border-bottom: 1px ridge rgb(184, 184, 184);
+  border-bottom: 1px ridge rgb(184, 184, 184);
 }
 
 p {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 .bio-image {
-    background-repeat: no-repeat;
-    height: 900px;
+  background-repeat: no-repeat;
+  height: 900px;
 }
 
 #claudia {
-    background-image: url("/images/IMG_1148.JPG");
-    background-position: 80% 20%;
+  background-image: url("/images/IMG_1148.JPG");
+  background-position: 80% 20%;
 }
 
 #bob {
-    background-image: url("/images/IMG_1181.JPG");
-    background-position: 32% 10%;
+  background-image: url("/images/IMG_1181.JPG");
+  background-position: 32% 10%;
 }
 
 #ross {
-    background-image: url("/images/20181216_161358.jpg");
-    background-position: 95% 38%;
+  background-image: url("/images/20181216_161358.jpg");
+  background-position: 95% 38%;
 }
 
 .bio-text {
-    color: white;
-    background: rgba(0, 0, 0, 0.75);
-    height: 900px;
-    overflow: auto;
+  color: white;
+  background: rgba(0, 0, 0, 0.75);
+  height: 900px;
+  overflow: auto;
+}
+
+.music-card {
+  padding: 5px;
+  border: 1px solid rgb(107, 49, 49);
+}
+
+.card-footer {
+  background-color: white;
+}
+
+.btn-music {
+    color: black;
+}
+
+.btn-music:hover {
+    opacity: 0.5;
 }
 
 @media only screen and (max-width: 1200px) {
-    #ross {
-        background-image: none;
-    }
+  #ross {
+    background-image: none;
+  }
 
-    #claudia {
-        background-image: none;
-    }
+  #claudia {
+    background-image: none;
+  }
 
-    #bob {
-        background-image: none;
-    }
+  #bob {
+    background-image: none;
+  }
 
-    .bio-text {
-        height: 700px;
-        border-radius: .25rem;
-    }
+  .bio-text {
+    height: 700px;
+    border-radius: 0.25rem;
+  }
 
-    .bio-image {
-        height: auto;
-    }
+  .bio-image {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .light-background {
+    background-color: rgba(250, 235, 215, 0.5);
+    width: fit-content;
+    border-bottom: 1px solid rgb(107, 49, 49);
+  }
 }

@@ -19,7 +19,7 @@
     <header class="jumbotron jumbotron-fluid mb-0">
         <div class="container">
             <div class="row text-md-left text-center">
-                <div class="col col-md-4">
+                <div class="col col-md-4 light-background">
                     <h1>Birdsall</h1>
                     <h2>Music Studios</h2>
                 </div>
@@ -52,32 +52,68 @@
     <main>
         <div class="container my-5">
             <div class="row">
-                <div class="col-11 col-sm-8 col-md-5 card text-center mx-auto my-3" style="width: 18rem;">
-                    <img src="https://images.unsplash.com/photo-1509805735646-2f72b3272a7d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2705&q=80"
-                        class="card-img-top mt-3 img-card" alt="Birthday cake">
+                <div class="col-12 col-md-10 col-lg-5 card text-center mx-auto my-3" style="width: 18rem;">
+                    <img src="images/richard-burlton-wUg4u1kKTXw-unsplash.jpg"
+                        class="card-img-top mt-3 img-card music-card" alt="Birthday cake">
+                    <audio class="music" preload="true">
+                        <source src="audio/Happy Birthday - Flow 1.mp3">
+                    </audio>
+                    <div class="container-fluid">
+                        <div class="row music" id="audioplayer">
+                            <a type="button" class=" col-1 btn-music">
+                                <i class="fa fa-play"></i>
+                            </a>
+                            <div class="col my-auto progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="card-body">
                         <div class="card-title content">
                             <h4>Happy Birthday</h4>
-                            <h5>For Beginning Violin</h5>
+                            <h5>Traditional</h5>
                         </div>
-                        <p>Traditional</p>
                         <p>Arranged by Ross Birdsall</p>
-                        <p class="content pb-5 mb-5">Happy Birthday for beginning violin in the key of G with piano accompaniment! Parts include
-                        violin, piano, and a combined part for ease of accompaniment.</p>
+                        <p>For Beginning Violin</p>
+                        <p>Happy Birthday for beginning violin in the key of G with piano accompaniment! Parts include
+                            violin, piano, and a combined part for ease of accompaniment.</p>
+                    </div>
+                    <div class="card-footer">
                         <a href="#" class="btn btn-primary">Inquire</a>
                     </div>
                 </div>
-                <div class="col-11 col-sm-8 col-md-5 card text-center mx-auto my-3" style="width: 18rem;">
-                    <img src="https://images.unsplash.com/photo-1561014816-50ce5acb5e73?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80"
-                        class="card-img-top mt-3 img-card" alt="Piano keys">
+                <div class="col-12 col-md-10 col-lg-5 card text-center mx-auto my-3" style="width: 18rem;">
+                    <img src="images/amir-doreh-cHUBZFjY13g-unsplash.jpg" class="card-img-top mt-3 img-card music-card"
+                        alt="Piano keys">
+                    <audio class="music" preload="true">
+                        <source src="audio/Excerpts from Grande Tarentelle - Flow 1.mp3">
+                    </audio>
+                    <div class="container-fluid">
+                        <div class="row music" id="audioplayer">
+                            <a type="button" class=" col-1 btn-music">
+                                <i class="fa fa-play"></i>
+                            </a>
+                            <div class="col my-auto progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="card-body">
                         <div class="card-title content">
                             <h4>Excerpts from Grande Tarantelle</h4>
                             <h5>By Louis Moreau Gottschalk</h5>
                         </div>
                         <p>Arranged by Ross Birdsall</p>
-                        <p>For five players on two 4.3 octave (low A) marimbas. This piece is a fun, fast-paced journey exploring 6/8 time with a few quick position changes to keep your performers and audience on their toes.</p>
-                        <p>Originally premiered by the Coleman middle school percussion ensemble at the 2019 University of South Florida Marimba Festival, this piece is perfect for an advanced middle school or early high school group.</p>
+                        <p>For five players on two 4.3 octave (low A) marimbas. This piece is a fun, fast-paced journey
+                            exploring 6/8 time with a few quick position changes to keep your performers and audience on
+                            their toes.</p>
+                        <p>Originally premiered by the Coleman middle school percussion ensemble at the 2019 University
+                            of South Florida Marimba Festival, this piece is perfect for an advanced middle school or
+                            early high school group.</p>
+                    </div>
+                    <div class="card-footer">
                         <a href="#" class="btn btn-primary">Inquire</a>
                     </div>
                 </div>
@@ -92,6 +128,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 
