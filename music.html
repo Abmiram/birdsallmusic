@@ -55,16 +55,16 @@
                 <div class="col-12 col-md-10 col-lg-5 card text-center mx-auto my-3" style="width: 18rem;">
                     <img src="images/richard-burlton-wUg4u1kKTXw-unsplash.jpg"
                         class="card-img-top mt-3 img-card music-card" alt="Birthday cake">
-                    <audio class="music" preload="true">
-                        <source src="audio/Happy Birthday - Flow 1.mp3">
-                    </audio>
                     <div class="container-fluid">
                         <div class="row music" id="audioplayer">
-                            <a type="button" class=" col-1 btn-music">
+                            <audio class="music" preload="true" id="happy-birthday">
+                                <source src="audio/Happy Birthday - Flow 1.mp3">
+                            </audio>
+                            <a type="button" class="col-1 btn-music" id="happy-birthday-btn">
                                 <i class="fa fa-play"></i>
                             </a>
                             <div class="col my-auto progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                                <div class="progress-bar" id="hbbar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                     aria-valuemax="100"></div>
                             </div>
                         </div>
@@ -86,12 +86,12 @@
                 <div class="col-12 col-md-10 col-lg-5 card text-center mx-auto my-3" style="width: 18rem;">
                     <img src="images/amir-doreh-cHUBZFjY13g-unsplash.jpg" class="card-img-top mt-3 img-card music-card"
                         alt="Piano keys">
-                    <audio class="music" preload="true">
-                        <source src="audio/Excerpts from Grande Tarentelle - Flow 1.mp3">
-                    </audio>
                     <div class="container-fluid">
                         <div class="row music" id="audioplayer">
-                            <a type="button" class=" col-1 btn-music">
+                            <audio class="music" preload="true" id="grande-tarantelle">
+                                <source src="audio/Excerpts from Grande Tarentelle - Flow 1.mp3">
+                            </audio>
+                            <a type="button" class=" col-1 btn-music" id="grande-tarantelle-btn">
                                 <i class="fa fa-play"></i>
                             </a>
                             <div class="col my-auto progress">

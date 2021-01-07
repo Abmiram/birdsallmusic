@@ -138,7 +138,7 @@ p {
 @media only screen and (max-width: 767px) {
   .light-background {
     background-color: rgba(250, 235, 215, 0.5);
-    width: fit-content;
+    width: auto;
     border-bottom: 1px solid rgb(107, 49, 49);
   }
 }
