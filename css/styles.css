@@ -87,6 +87,16 @@ p {
     opacity: 0.5;
 }
 
+.btn-login {
+  background-color: rgb(107, 49, 49);
+  color: white;
+}
+
+.btn-login:hover {
+  opacity: 0.8;
+  color: white;
+}
+
 #carouselExampleSlidesOnly {
   padding: 1rem;
   border: 1px solid rgb(184, 184, 184);
