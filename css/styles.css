@@ -87,17 +87,12 @@ p {
     opacity: 0.5;
 }
 
-.btn-login {
-  background-color: rgb(107, 49, 49);
-  color: white;
-}
-
 .btn-login:hover {
   opacity: 0.8;
   color: white;
 }
 
-.modal-header {
+.header {
   background-color: rgb(107, 49, 49);
   color: white;
 }
@@ -105,7 +100,20 @@ p {
 #carouselExampleSlidesOnly {
   padding: 1rem;
   border: 1px solid rgb(184, 184, 184);
+}
 
+.close {
+  color: white;
+  opacity: 1;
+}
+
+.close:hover {
+  color: white;
+  opacity: 0.7;
+}
+
+.link-card {
+  max-width: 363px;
 }
 
 @media only screen and (max-width: 1454px) {
