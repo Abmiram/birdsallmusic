@@ -1,5 +1,5 @@
-const happyBirthday = document.getElementById('happy-birthday');
-const grandeTarentelle = document.getElementById('grande-tarantelle');
+const username = "Student";
+const password = "Suzuki";
 
 $(() => {
     $('.btn-music').on('click', event => {
@@ -8,11 +8,11 @@ $(() => {
         $(event.currentTarget).children().toggleClass('fa-play');
         $(event.currentTarget).children().toggleClass('fa-pause');
         if ($(event.currentTarget).children().hasClass('fa-pause')) {
-            currentSong.trigger('play'); 
+            currentSong.trigger('play');
         } else {
             currentSong.trigger('pause');
         };
-        currentSong.on('timeupdate', function() {
+        currentSong.on('timeupdate', function () {
             currentBar.attr("aria-valuenow", (this.currentTime / this.duration) * 100);
             currentBar.css("width", `${(this.currentTime / this.duration) * 100}%`);
             if (this.currentTime === this.duration) {
@@ -23,5 +23,13 @@ $(() => {
             }
         });
     })
+    $('#student-form').on('submit', () => {
+        if ($('#username').val() == username && $('#password').val() == password) {
+            $('#student-links').css('display', 'block');
+            $('.login-card').css('display', 'none')
+            return false;
+        } else {
+            alert("An incorrect username or password was entered.");
+        };
+    })
 });
-

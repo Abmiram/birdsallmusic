@@ -116,6 +116,27 @@ p {
   max-width: 363px;
 }
 
+h4 a {
+  color: white;
+}
+
+.btn-link {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.btn-link:hover {
+  color: white;
+}
+
+#student-links {
+  display: none;
+}
+
+.login-card {
+  max-width: 540px;
+}
+
 @media only screen and (max-width: 1454px) {
   #claudia {
     background-image: url("/images/IMG_1148.JPG");
@@ -158,7 +179,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .light-background {
     background-color: rgba(250, 235, 215, 0.5);
     width: auto;
