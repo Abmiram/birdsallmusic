@@ -1,20 +1,20 @@
 const username = "Student";
 const password = "Suzuki";
 
-$(() => {
-    $('.btn-music').on('click', event => {
-        let currentSong = $(event.currentTarget).siblings('.music');
-        let currentBar = $(event.currentTarget).siblings('.progress').children();
+$(function() {
+    $('.btn-music').on('click', function(event) {
+        var song = $(event.currentTarget).siblings('.music');
+        var currentBar = $(event.currentTarget).siblings('.progress').children();
         $(event.currentTarget).children().toggleClass('fa-play');
         $(event.currentTarget).children().toggleClass('fa-pause');
         if ($(event.currentTarget).children().hasClass('fa-pause')) {
-            currentSong.trigger('play');
+            song.trigger('play');
         } else {
-            currentSong.trigger('pause');
+            song.trigger('pause');
         };
-        currentSong.on('timeupdate', function () {
+        song.on('timeupdate', function () {
             currentBar.attr("aria-valuenow", (this.currentTime / this.duration) * 100);
-            currentBar.css("width", `${(this.currentTime / this.duration) * 100}%`);
+            currentBar.css("width", (this.currentTime / this.duration) * 100);
             if (this.currentTime === this.duration) {
                 $(event.currentTarget).children().toggleClass('fa-play');
                 $(event.currentTarget).children().toggleClass('fa-pause');
@@ -22,8 +22,8 @@ $(() => {
                 currentBar.css("width", "0%");
             }
         });
-    })
-    $('#student-form').on('submit', () => {
+    });
+    $('#student-form').on('submit', function() {
         if ($('#username').val() == username && $('#password').val() == password) {
             $('#student-links').css('display', 'block');
             $('.login-card').css('display', 'none')
@@ -31,5 +31,5 @@ $(() => {
         } else {
             alert("An incorrect username or password was entered.");
         };
-    })
+    });
 });
