@@ -4,8 +4,9 @@
   "description": "Birdsall music studio website",
   "main": "index.html",
   "scripts": {
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run copymusic && npm run usemin",
     "clean": "rimraf dist",
+    "copymusic": "copyfiles -f audio/* dist/audio",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin images/* -o dist/images",
     "lite": "lite-server",
