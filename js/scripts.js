@@ -13,8 +13,8 @@ $(function() {
             song.trigger('pause');
         };
         song.on('timeupdate', function () {
-            currentBar.attr("aria-valuenow", (this.currentTime / this.duration) * 100);
-            currentBar.css("width", (this.currentTime / this.duration) * 100);
+            currentBar.attr("aria-valuenow", (this.currentTime / this.duration) * 100 + '%');
+            currentBar.css("width", (this.currentTime / this.duration) * 100 + '%');
             if (this.currentTime === this.duration) {
                 $(event.currentTarget).children().toggleClass('fa-play');
                 $(event.currentTarget).children().toggleClass('fa-pause');
