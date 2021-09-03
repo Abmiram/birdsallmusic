@@ -1,5 +1,5 @@
-const username = "Student";
-const password = "Suzuki";
+const username = "Birdsall";
+const password = "Music";
 
 $(function() {
     $('.btn-music').on('click', function(event) {
