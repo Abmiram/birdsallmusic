@@ -2,505 +2,489 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- build:css css/main.css-->
-    <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link type="text/css" rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
-    <link type="text/css" rel="stylesheet" href="./css/styles.css" />
-    <!-- endbuild -->
+  <!-- build:css css/main.css-->
+  <link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link type="text/css" rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css" />
+  <link type="text/css" rel="stylesheet" href="./css/styles.css" />
+  <!-- endbuild -->
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Source+Sans+Pro&display=swap"
-        rel="stylesheet">
-    <title>Birdsall music student resources</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
+  <title>Birdsall music student resources</title>
 </head>
 
 <body>
 
-    <header class="jumbotron jumbotron-fluid mb-0">
-        <div class="container">
-            <div class="row text-md-left text-center">
-                <div class="col col-md-4 light-background">
-                    <h1>Birdsall</h1>
-                    <h2>Music Studios</h2>
-                </div>
-            </div>
+  <header class="jumbotron jumbotron-fluid mb-0">
+    <div class="container">
+      <div class="row text-md-left text-center">
+        <div class="col col-md-4 light-background">
+          <h1>Birdsall</h1>
+          <h2>Music Studios</h2>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
-        <div class="container">
-            <button class="navbar-toggler m-auto" type="button" data-toggle="collapse" data-target="#birdsallNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="birdsallNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-info fa-lg"></i>
-                            About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="music.html"><i class="fa fa-music fa-lg"></i>
-                            Music</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-book fa-lg"></i>
-                            Students</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html"><i
-                                class="fa fa-address-card fa-lg"></i>
-                            Contact</a></li>
-                </ul>
+  <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
+    <div class="container">
+      <button class="navbar-toggler m-auto" type="button" data-toggle="collapse" data-target="#birdsallNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="birdsallNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-info fa-lg"></i>
+              About</a></li>
+          <li class="nav-item"><a class="nav-link" href="music.html"><i class="fa fa-music fa-lg"></i>
+              Music</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-book fa-lg"></i>
+              Students</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa fa-address-card fa-lg"></i>
+              Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+  <main>
+
+    <div class="container">
+      <div class="row">
+        <div class="col login-card mt-5">
+          <div class="card">
+            <div class="card-header header">
+              <h4 class="card-title" id="loginModalLabel">Sign in</h4>
             </div>
+            <div class="card-body">
+              <form id="student-form">
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input id="username" class="form-control" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter password">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
         </div>
+      </div>
 
-    </nav>
 
-    <main>
-
-        <div class="container">
-            <div class="row">
-                <div class="col login-card mt-5">
-                    <div class="card">
-                        <div class="card-header header">
-                            <h4 class="card-title" id="loginModalLabel">Sign in</h4>
-                        </div>
-                        <div class="card-body">
-                            <form id="student-form">
-                                <div class="form-group">
-                                    <label for="username">Username</label>
-                                    <input id="username" class="form-control" placeholder="Enter username">
-                                </div>
-                                <div class="form-group">
-                                    <label for="inputPassword">Password</label>
-                                    <input type="password" class="form-control" id="password"
-                                        placeholder="Enter password">
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
-                        </div>
-                    </div>
+      <div id="student-links" class="container ml-md-0 mx-auto mt-5">
+        <div class="row my-3">
+          <div id="violin-links" class="mx-auto ml-md-0 col col-sm-10 col-md-8 col-lg-6">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header text-center text-md-left header mb-0">
+                  <h4>
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      Pre-twinkle/Twinkle
+                    </button>
+                  </h4>
                 </div>
-            </div>
-
-
-            <div id="student-links" class="container ml-md-0 mx-auto mt-5">
-                <div class="row my-3">
-                    <div id="violin-links" class="mx-auto ml-md-0 col col-sm-10 col-md-8 col-lg-6">
-                        <div id="accordion">
-                            <div class="card">
-                                <div class="card-header text-center text-md-left header mb-0">
-                                    <h4>
-                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
-                                            aria-expanded="true" aria-controls="collapseOne">
-                                            Pre-twinkle/Twinkle
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li><a href="https://youtu.be/A8PiGIr1wAY" target="_blank">Picking up and setting up violin posture</a></li>
-                                            <li><a href="https://youtu.be/53jq1YFhPko" target="_blank">Parts of the
-                                                    Violin</a>
-                                            </li>
-                                            <li><a href="https://youtu.be/1Swh4lTd4do" target="_blank">Finger Taps</a>
-                                            </li>
-                                            <li><a href="https://youtu.be/vS4KD9Y-CGE" target="_blank">Twinkle Rhythms Tap and Soap</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=21BR3_7fRHQ"
-                                                    target="_blank">Twinkle
-                                                    Set 2
-                                                    complete</a></li>
-                                                    <li><a href="https://drive.google.com/drive/folders/1ytfeX5t3aUv2VK_51hbZWFUMk7NNkA4e?usp=sharing" target="_blank">Violin Resources</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-header text-center text-md-left header mb-0" id="headingTwo">
-                                    <h4>
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                            data-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            Suzuki Book 1
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li><a href="https://youtu.be/zXdPRxGS2P4" target="_blank">Lightly Row
-                                                    practice
-                                                    speed</a></li>
-                                            <li><a href="https://youtu.be/cbav7irOnas" target="_blank">Song of the Wind
-                                                    practice
-                                                    speed</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=B7xRpeyb7lQ&t=5s"
-                                                    target="_blank">Go
-                                                    Tell
-                                                    Aunt
-                                                    Rhody bowing preparation</a></li>
-                                            <li><a href="https://youtu.be/8PvHYC3yebM" target="_blank">Go Tell Aunt
-                                                    Rhody
-                                                    practice
-                                                    speed</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=A0_12UhIgbs" target="_blank">O
-                                                    Come
-                                                    Little
-                                                    Children
-                                                    practice speed</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=3XRA_5HYucQ" target="_blank">O
-                                                    Come
-                                                    Little
-                                                    Children
-                                                    full speed</a></li>
-                                            <li><a href="https://youtu.be/ycE-t3eJ2yE" target="_blank">May Song full speed</a></li>
-                                            <li><a href="https://youtu.be/4tBnWq1b_cU" target="_blank">Long Ago practice speed</a></li>
-                                            <li><a href="https://youtu.be/-p4r3KAhBhI" target="_blank">Allegro full speed</a></li>
-                                            <li><a href="https://youtu.be/dIr3C0Nq4mk" target="_blank">Perpetual Motion
-                                                    practice
-                                                    speed</a></li>
-                                            <li><a href="https://youtu.be/VBJjok6ErqY" target="_blank">Allegretto
-                                                    practice
-                                                    speed</a>
-                                            </li>
-                                            <li><a href="https://www.youtube.com/watch?v=3CHAooLnE5w"
-                                                    target="_blank">Andantino
-                                                    practice
-                                                    speed</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=B2Vheze-2Lc"
-                                                    target="_blank">Andantino
-                                                    full
-                                                    speed</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=q4jOX6Cc5KE&t=1s"
-                                                    target="_blank">Etude
-                                                    practice
-                                                    speed</a></li>
-                                            <li><a href="https://youtu.be/o43f7orZnII" target="_blank">Minuet 1 practice
-                                                    speed</a>
-                                            </li>
-                                            <li><a href="https://youtu.be/HPrOSLuAE78" target="_blank">Minuet 1 full
-                                                    speed</a>
-                                            </li>
-                                            <li><a href="https://youtu.be/Pda2q6OmZoc" target="_blank">Minuet 2 practice
-                                                    speed
-                                                </a>
-                                            </li>
-                                            <li><a href="https://youtu.be/jGp1BPv0eAs" target="_blank">Minuet 3 full
-                                                    speed
-                                                </a>
-                                            </li>
-                                            <li><a href="https://youtu.be/5lb7ftoiUJI" target="_blank">The Happy Farmer
-                                                    full
-                                                    speed</a></li>
-                                            <li><a href="https://youtu.be/8Pk34HGRquU" target="_blank">Gossec Gavotte
-                                                    practice
-                                                    speed</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="card">
-                                <div class="card-header text-center text-md-left header mb-0" id="headingThree">
-                                    <h4>
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                            data-target="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseThree">
-                                            Suzuki Book 2
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li><a href="https://youtu.be/I85J901qILQ" target="_blank">Chorus from "Judas Maccabaeus" full speed</a>
-                                            </li>
-                                            <li><a href="https://youtu.be/qS6wNilN0dA" target="_blank">Musette preps</a></li>
-                                            <li><a href="https://youtu.be/30OlUirmhr4" target="_blank">Musette practice speed</a></li>
-                                            <li><a href="https://youtu.be/ScGhnP3ZhnU" target="_blank">Waltz full
-                                                    speed</a>
-                                            </li>
-                                            <li><a href="https://www.youtube.com/watch?v=sHp5Wp0jPpw"
-                                                    target="_blank">Bourree by
-                                                    Handel
-                                                    practice speed</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=aKMKYJUMoH8"
-                                                    target="_blank">Bourree by
-                                                    Handel
-                                                    full
-                                                    speed</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=DbZR2jR_yrw"
-                                                    target="_blank">Two
-                                                    Grenadiers
-                                                    preps</a></li>
-                                            <li><a href="https://youtu.be/UABJyFNMo24" target="_blank">Gavotte from
-                                                    Mignon
-                                                    practice
-                                                    speed</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=obPc5dfbRNI"
-                                                    target="_blank">Lully
-                                                    Gavotte
-                                                    practice
-                                                    speed</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=9OQs0TlK4kw"
-                                                    target="_blank">Lully
-                                                    Gavotte
-                                                    full
-                                                    speed</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=XIeFLxr4Jnk"
-                                                    target="_blank">Beethoven
-                                                    Minuet
-                                                    in G
-                                                    practice speed</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=IoxfJiom55A"
-                                                    target="_blank">Beethoven
-                                                    Minuet
-                                                    in G
-                                                    full speed</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-header text-center text-md-left header mb-0" id="headingFour">
-                                    <h4>
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                            data-target="#collapseFour" aria-expanded="false"
-                                            aria-controls="collapseFour">
-                                            Suzuki Book 3
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li><a href="https://youtu.be/uYbxyCyIVdc" target="_blank">Humoresque
-                                                    practice
-                                                    speed</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-header text-center text-md-left header mb-0" id="headingFive">
-                                    <h4>
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                            data-target="#collapseFive" aria-expanded="false"
-                                            aria-controls="collapseFive">
-                                            Suzuki Book 4
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li><a href="https://www.youtube.com/watch?v=zcomQ2avEKs"
-                                                    target="_blank">Seitz
-                                                    No.
-                                                    2 3rd. mvt. Section A</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=YAzDUQ1ptkw"
-                                                    target="_blank">Seitz
-                                                    No.
-                                                    2 3rd. mvt. Section B</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=vG-gnq8ZWRg"
-                                                    target="_blank">Seitz
-                                                    No.
-                                                    2 3rd. mvt. Section C</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=SfSUwukMuyA"
-                                                    target="_blank">Seitz
-                                                    No.
-                                                    2 3rd. mvt. Section D</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=cOaSt22X5bI"
-                                                    target="_blank">Seitz
-                                                    No.
-                                                    2 3rd. mvt. Section Final (Coda)</a></li>
-                                            <li><a href="https://youtu.be/liD8ygXOi7M" target="_blank">Seitz No. 5, 1st
-                                                    mvt. m. 86-87 string crossing
-                                                    prep</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=9O_IlFCh8NA&list=UUzH6_hgD2e6n0Ey538ujhdA&index=8"
-                                                    target="_blank">Seitz No. 5, 1st mvt. m. 15-34</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=eJxgW9D8ttY&list=UUzH6_hgD2e6n0Ey538ujhdA&index=4"
-                                                    target="_blank">Seitz No. 5, 1st mvt. m. 35-51</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=36u-TSuGJ6s&list=UUzH6_hgD2e6n0Ey538ujhdA&index=9"
-                                                    target="_blank">Seitz No. 5, 1st mvt. E major scale prep and m.
-                                                    52-59</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=cpx4Iy3AT7E&list=UUzH6_hgD2e6n0Ey538ujhdA&index=3"
-                                                    target="_blank">Seitz No. 5, 1st mvt. m. 60-79</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=KbfS2D8CeaA&list=UUzH6_hgD2e6n0Ey538ujhdA&index=2"
-                                                    target="_blank">Seitz No. 5, 1st mvt. m. 79-end</a></li>
-                                            <li><a href="https://youtu.be/4RFZuQ6rruk" target="_blank">Seitz Concerto No. 5, 1st mvt. complete without piano</a></li>
-                                            <li><a href="https://youtu.be/g0t7Ef9pO7g" target="_blank">Seitz Concerto No. 5, 1st mvt. complete with piano</a></li>
-                                            <li><a href="https://youtu.be/Zwd-qGF5Ydc" target="_blank">Vivaldi Concerto in a minor 1st mvt. Page 1 practice speed</a></li>
-                                            <li><a href="https://youtu.be/h7s7l75ZTpQ" target="_blank">Vivaldi Concerto in a minor 1st mvt. Page 2 practice speed</a></li>
-                                            <li><a href="https://youtu.be/XkvaXWHMpg8" target="_blank">Vivaldi Concerto in a minor 1st mvt. Page 3 practice speed</a></li>
-                                            <li><a href="https://youtu.be/EZvxeamj9o8" target="_blank">Vivaldi Concerto in A minor 3rd movement with accompaniment</a></li>
-                                            <li><a href="https://youtu.be/vRDKfI2SWmc" target="_blank">#1 K. Bohm Perpetual Motion m. 1-15</a></li>
-                                            <li><a href="https://youtu.be/C_QFmMpTytI" target="_blank">#2 K. Bohm
-                                                    Perpetual Motion m. 16-27</a></li>
-                                            <li><a href="https://youtu.be/W_0s5_VKOm4" target="_blank">#3 K. Bohm
-                                                    Perpetual Motion m. 28-41</a></li>
-                                            <li><a href="https://youtu.be/sVMYMkvZ8sI" target="_blank">#4 K. Bohm
-                                                    Perpetual Motion m. 42-49</a></li>
-                                            <li><a href="https://youtu.be/nHTZm4DZOrU" target="_blank">$5 K. Bohm
-                                                    Perpetual Motion m. 48-end</a></li>
-                                            <li><a href="https://youtu.be/r_kXD5iuvzo" target="_blank">Bach Double Violin 2 at practice speed mm 80 quarter note m. 1-21</a></li>
-                                            <li><a href="https://youtu.be/WWXCQmTDAjo" target="_blank">Bach Double Violin 2 at practice speed mm 80 quarter note m. 22-55</a></li>
-                                            <li><a href="https://youtu.be/gaEfybSlcrg" target="_blank">Bach Double Violin 2 at practice speed mm 80 quarter note m. 55-end</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-header text-center text-md-left header mb-0" id="headingSix">
-                                    <h4>
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                            data-target="#collapseSix" aria-expanded="false"
-                                            aria-controls="collapseSix">
-                                            Violin Technique
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li><a href="https://www.youtube.com/watch?v=D5BDWg1c1Q4&t=2s"
-                                                    target="_blank">Spiccato preps 1-3</a></li>
-                                            <li><a href="https://youtu.be/1NvpDYB8H9w"
-                                                target="_blank">In Springtime from Above the First Position - teacher duet</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-header text-center text-md-left header mb-0" id="headingSeven">
-                                    <h4>
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                            data-target="#collapseSeven" aria-expanded="false"
-                                            aria-controls="collapseSeven">
-                                            Holiday Music
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li><a href="https://youtu.be/DbWWtV4Zies" target="_blank">Jingle Bells</a>
-                                            </li>
-                                            <li><a href="https://youtu.be/Cno8fqArScE" target="_blank">Chanukah</a>
-                                            </li>
-                                            <li><a href="https://youtu.be/mPSrc4LK49s" target="_blank">Joy to the
-                                                    World</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-header text-center text-md-left header mb-0" id="headingEight">
-                                    <h4>
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                            data-target="#collapseEight" aria-expanded="false"
-                                            aria-controls="collapseEight">
-                                            Allegro Ensemble Music
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li><a href="https://youtu.be/u9pkuXgc3qU" target="_blank">Carmen,
-                                                    Carmela</a>
-                                            </li>
-                                            <li><a href="https://youtu.be/9hpk3mFBeRU" target="_blank">Trio
-                                                    Elegiaque</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card">
-                                <div class="card-header text-center text-md-left header mb-0" id="headingNine">
-                                    <h4>
-                                        <button class="btn btn-link collapsed" data-toggle="collapse"
-                                            data-target="#collapseNine" aria-expanded="false"
-                                            aria-controls="collapseNine">
-                                            Guitar Music
-                                        </button>
-                                    </h4>
-                                </div>
-                                <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
-                                    data-parent="#accordion">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li><a href="https://youtu.be/Ddd5bTDRA6g" target="_blank">Twinkle Variation A</a></li>
-                                            <li><a href="https://youtu.be/DIccPiOJ5MM" target="_blank">Twinkle Variation B</a></li>
-                                            <li><a href="https://youtu.be/MvCkcF8bX3s" target="_blank">Twinkle Variation C</a></li>
-                                            <li><a href="https://youtu.be/DJ2XPuD3ObQ" target="_blank">Twinkle Variation D</a></li>
-                                            <li><a href="https://youtu.be/LARILIjG8OI" target="_blank">Twinkle Variation E</a></li>
-                                            <li><a href="https://youtu.be/63N56aTq9QM" target="_blank">Twinkle Theme</a></li>
-                                            <li><a href="https://youtu.be/5crwWN2eSbc" target="_blank">Lightly Row</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-    </main>
-
-    <footer class="mt-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-2">
-                    <ul class="list-unstyled">
-                        <li><a class="nav-link" href="index.html">Home</a></li>
-                        <li><a class="nav-link" href="about.html">About</a></li>
-                        <li><a class="nav-link" href="music.html">Music</a></li>
-                        <li><a class="nav-link" href="#">Students</a></li>
-                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li><a href="https://youtu.be/A8PiGIr1wAY" target="_blank">Picking up and setting up violin
+                          posture</a></li>
+                      <li><a href="https://youtu.be/53jq1YFhPko" target="_blank">Parts of the
+                          Violin</a>
+                      </li>
+                      <li><a href="https://youtu.be/1Swh4lTd4do" target="_blank">Finger Taps</a>
+                      </li>
+                      <li><a href="https://youtu.be/vS4KD9Y-CGE" target="_blank">Twinkle Rhythms Tap and Soap</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=21BR3_7fRHQ" target="_blank">Twinkle
+                          Set 2
+                          complete</a></li>
+                      <li><a href="https://drive.google.com/drive/folders/1ytfeX5t3aUv2VK_51hbZWFUMk7NNkA4e?usp=sharing"
+                          target="_blank">Violin Resources</a></li>
                     </ul>
+                  </div>
                 </div>
-                <div class="col-10 text-right">
-                    <a role="button" class="btn btn-link" href="tel:+7194477237">
-                        <p><i class="fa fa-phone"></i>
-                            1-719-447-7237</p>
-                    </a><br />
-                    <a role="button" class="btn btn-link" href="mailto:ross.birdsall9@gmail.com">
-                        <p><i class="fa fa-envelope-o"></i> ross.birdsall9@gmail.com</p>
-                    </a><br />
-                    <a role="button" class="btn btn-link" href="https://www.linkedin.com/in/ross-birdsall-85950311b/">
-                        <p>Website by Ross Birdsall</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+              </div>
 
-    <!-- build:js js/main.js -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- endbuild -->
+              <div class="card">
+                <div class="card-header text-center text-md-left header mb-0" id="headingTwo">
+                  <h4>
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                      aria-expanded="false" aria-controls="collapseTwo">
+                      Suzuki Book 1
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li><a href="https://youtu.be/zXdPRxGS2P4" target="_blank">Lightly Row
+                          practice
+                          speed</a></li>
+                      <li><a href="https://youtu.be/cbav7irOnas" target="_blank">Song of the Wind
+                          practice
+                          speed</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=B7xRpeyb7lQ&t=5s" target="_blank">Go
+                          Tell
+                          Aunt
+                          Rhody bowing preparation</a></li>
+                      <li><a href="https://youtu.be/8PvHYC3yebM" target="_blank">Go Tell Aunt
+                          Rhody
+                          practice
+                          speed</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=A0_12UhIgbs" target="_blank">O
+                          Come
+                          Little
+                          Children
+                          practice speed</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=3XRA_5HYucQ" target="_blank">O
+                          Come
+                          Little
+                          Children
+                          full speed</a></li>
+                      <li><a href="https://youtu.be/ycE-t3eJ2yE" target="_blank">May Song full speed</a></li>
+                      <li><a href="https://youtu.be/4tBnWq1b_cU" target="_blank">Long Ago practice speed</a></li>
+                      <li><a href="https://youtu.be/-p4r3KAhBhI" target="_blank">Allegro full speed</a></li>
+                      <li><a href="https://youtu.be/dIr3C0Nq4mk" target="_blank">Perpetual Motion
+                          practice
+                          speed</a></li>
+                      <li><a href="https://youtu.be/VBJjok6ErqY" target="_blank">Allegretto
+                          practice
+                          speed</a>
+                      </li>
+                      <li><a href="https://www.youtube.com/watch?v=3CHAooLnE5w" target="_blank">Andantino
+                          practice
+                          speed</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=B2Vheze-2Lc" target="_blank">Andantino
+                          full
+                          speed</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=q4jOX6Cc5KE&t=1s" target="_blank">Etude
+                          practice
+                          speed</a></li>
+                      <li><a href="https://youtu.be/o43f7orZnII" target="_blank">Minuet 1 practice
+                          speed</a>
+                      </li>
+                      <li><a href="https://youtu.be/HPrOSLuAE78" target="_blank">Minuet 1 full
+                          speed</a>
+                      </li>
+                      <li><a href="https://youtu.be/Pda2q6OmZoc" target="_blank">Minuet 2 practice
+                          speed
+                        </a>
+                      </li>
+                      <li><a href="https://youtu.be/jGp1BPv0eAs" target="_blank">Minuet 3 full
+                          speed
+                        </a>
+                      </li>
+                      <li><a href="https://youtu.be/5lb7ftoiUJI" target="_blank">The Happy Farmer
+                          full
+                          speed</a></li>
+                      <li><a href="https://youtu.be/8Pk34HGRquU" target="_blank">Gossec Gavotte
+                          practice
+                          speed</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <div class="card-header text-center text-md-left header mb-0" id="headingThree">
+                  <h4>
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                      aria-expanded="false" aria-controls="collapseThree">
+                      Suzuki Book 2
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li><a href="https://youtu.be/I85J901qILQ" target="_blank">Chorus from "Judas Maccabaeus" full
+                          speed</a>
+                      </li>
+                      <li><a href="https://youtu.be/qS6wNilN0dA" target="_blank">Musette preps</a></li>
+                      <li><a href="https://youtu.be/30OlUirmhr4" target="_blank">Musette practice speed</a></li>
+                      <li><a href="https://youtu.be/ScGhnP3ZhnU" target="_blank">Waltz full
+                          speed</a>
+                      </li>
+                      <li><a href="https://www.youtube.com/watch?v=sHp5Wp0jPpw" target="_blank">Bourree by
+                          Handel
+                          practice speed</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=aKMKYJUMoH8" target="_blank">Bourree by
+                          Handel
+                          full
+                          speed</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=DbZR2jR_yrw" target="_blank">Two
+                          Grenadiers
+                          preps</a></li>
+                      <li><a href="https://youtu.be/UABJyFNMo24" target="_blank">Gavotte from
+                          Mignon
+                          practice
+                          speed</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=obPc5dfbRNI" target="_blank">Lully
+                          Gavotte
+                          practice
+                          speed</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=9OQs0TlK4kw" target="_blank">Lully
+                          Gavotte
+                          full
+                          speed</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=XIeFLxr4Jnk" target="_blank">Beethoven
+                          Minuet
+                          in G
+                          practice speed</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=IoxfJiom55A" target="_blank">
+                        Beethoven Minuet in G full speed</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header text-center text-md-left header mb-0" id="headingFour">
+                  <h4>
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                      aria-expanded="false" aria-controls="collapseFour">
+                      Suzuki Book 3
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li><a href="https://youtu.be/uYbxyCyIVdc" target="_blank">Humoresque
+                          practice
+                          speed</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header text-center text-md-left header mb-0" id="headingFive">
+                  <h4>
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                      aria-expanded="false" aria-controls="collapseFive">
+                      Suzuki Book 4
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li><a href="https://www.youtube.com/watch?v=zcomQ2avEKs" target="_blank">Seitz
+                          No.
+                          2 3rd. mvt. Section A</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=YAzDUQ1ptkw" target="_blank">Seitz
+                          No.
+                          2 3rd. mvt. Section B</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=vG-gnq8ZWRg" target="_blank">Seitz
+                          No.
+                          2 3rd. mvt. Section C</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=SfSUwukMuyA" target="_blank">Seitz
+                          No.
+                          2 3rd. mvt. Section D</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=cOaSt22X5bI" target="_blank">Seitz
+                          No.
+                          2 3rd. mvt. Section Final (Coda)</a></li>
+                      <li><a href="https://youtu.be/liD8ygXOi7M" target="_blank">Seitz No. 5, 1st
+                          mvt. m. 86-87 string crossing
+                          prep</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=9O_IlFCh8NA&list=UUzH6_hgD2e6n0Ey538ujhdA&index=8"
+                          target="_blank">Seitz No. 5, 1st mvt. m. 15-34</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=eJxgW9D8ttY&list=UUzH6_hgD2e6n0Ey538ujhdA&index=4"
+                          target="_blank">Seitz No. 5, 1st mvt. m. 35-51</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=36u-TSuGJ6s&list=UUzH6_hgD2e6n0Ey538ujhdA&index=9"
+                          target="_blank">Seitz No. 5, 1st mvt. E major scale prep and m.
+                          52-59</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=cpx4Iy3AT7E&list=UUzH6_hgD2e6n0Ey538ujhdA&index=3"
+                          target="_blank">Seitz No. 5, 1st mvt. m. 60-79</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=KbfS2D8CeaA&list=UUzH6_hgD2e6n0Ey538ujhdA&index=2"
+                          target="_blank">Seitz No. 5, 1st mvt. m. 79-end</a></li>
+                      <li><a href="https://youtu.be/4RFZuQ6rruk" target="_blank">Seitz Concerto No. 5, 1st mvt. complete
+                          without piano</a></li>
+                      <li><a href="https://youtu.be/g0t7Ef9pO7g" target="_blank">Seitz Concerto No. 5, 1st mvt. complete
+                          with piano</a></li>
+                      <li><a href="https://youtu.be/Zwd-qGF5Ydc" target="_blank">Vivaldi Concerto in a minor 1st mvt.
+                          Page 1 practice speed</a></li>
+                      <li><a href="https://youtu.be/h7s7l75ZTpQ" target="_blank">Vivaldi Concerto in a minor 1st mvt.
+                          Page 2 practice speed</a></li>
+                      <li><a href="https://youtu.be/XkvaXWHMpg8" target="_blank">Vivaldi Concerto in a minor 1st mvt.
+                          Page 3 practice speed</a></li>
+                      <li><a href="https://youtu.be/EZvxeamj9o8" target="_blank">Vivaldi Concerto in A minor 3rd
+                          movement with accompaniment</a></li>
+                      <li><a href="https://youtu.be/vRDKfI2SWmc" target="_blank">#1 K. Bohm Perpetual Motion m. 1-15</a>
+                      </li>
+                      <li><a href="https://youtu.be/C_QFmMpTytI" target="_blank">#2 K. Bohm
+                          Perpetual Motion m. 16-27</a></li>
+                      <li><a href="https://youtu.be/W_0s5_VKOm4" target="_blank">#3 K. Bohm
+                          Perpetual Motion m. 28-41</a></li>
+                      <li><a href="https://youtu.be/sVMYMkvZ8sI" target="_blank">#4 K. Bohm
+                          Perpetual Motion m. 42-49</a></li>
+                      <li><a href="https://youtu.be/nHTZm4DZOrU" target="_blank">$5 K. Bohm
+                          Perpetual Motion m. 48-end</a></li>
+                      <li><a href="https://youtu.be/r_kXD5iuvzo" target="_blank">Bach Double Violin 2 at practice speed
+                          mm 80 quarter note m. 1-21</a></li>
+                      <li><a href="https://youtu.be/WWXCQmTDAjo" target="_blank">Bach Double Violin 2 at practice speed
+                          mm 80 quarter note m. 22-55</a></li>
+                      <li><a href="https://youtu.be/gaEfybSlcrg" target="_blank">Bach Double Violin 2 at practice speed
+                          mm 80 quarter note m. 55-end</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header text-center text-md-left header mb-0" id="headingSix">
+                  <h4>
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix"
+                      aria-expanded="false" aria-controls="collapseSix">
+                      Violin Technique
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li><a href="https://www.youtube.com/watch?v=D5BDWg1c1Q4&t=2s" target="_blank">Spiccato preps
+                          1-3</a></li>
+                      <li><a href="https://youtu.be/1NvpDYB8H9w" target="_blank">In Springtime from Above the First
+                          Position - teacher duet</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header text-center text-md-left header mb-0" id="headingSeven">
+                  <h4>
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven"
+                      aria-expanded="false" aria-controls="collapseSeven">
+                      Holiday Music
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li><a href="https://youtu.be/DbWWtV4Zies" target="_blank">Jingle Bells</a>
+                      </li>
+                      <li><a href="https://youtu.be/8oTObPyonKk" target="_blank">S'Vivon</a>
+                      </li>
+                      <li><a href="https://youtu.be/xAuAbHxjtjI" target="_blank">Jolly Old St. Nicholas</a>
+                      </li>
+                      <li><a href="https://youtu.be/GRi46AB0nOY" target="_blank">Greensleeves</a>
+                      </li>
+                      <li><a href="https://youtu.be/Cno8fqArScE" target="_blank">Chanukah</a>
+                      </li>
+                      <li><a href="https://youtu.be/mPSrc4LK49s" target="_blank">Joy to the
+                          World</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header text-center text-md-left header mb-0" id="headingEight">
+                  <h4>
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEight"
+                      aria-expanded="false" aria-controls="collapseEight">
+                      Allegro Ensemble Music
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li><a href="https://youtu.be/u9pkuXgc3qU" target="_blank">Carmen,
+                          Carmela</a>
+                      </li>
+                      <li><a href="https://youtu.be/9hpk3mFBeRU" target="_blank">Trio
+                          Elegiaque</a>
+                      </li>
+                      <li><a href="https://youtu.be/3sCe-U7_xos" target="_blank">
+                        Telemann Concerto for 4 Violins, Mvt. 2</a>
+                    </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header text-center text-md-left header mb-0" id="headingNine">
+                  <h4>
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseNine"
+                      aria-expanded="false" aria-controls="collapseNine">
+                      Guitar Music
+                    </button>
+                  </h4>
+                </div>
+                <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul>
+                      <li><a href="https://youtu.be/Ddd5bTDRA6g" target="_blank">Twinkle Variation A</a></li>
+                      <li><a href="https://youtu.be/DIccPiOJ5MM" target="_blank">Twinkle Variation B</a></li>
+                      <li><a href="https://youtu.be/MvCkcF8bX3s" target="_blank">Twinkle Variation C</a></li>
+                      <li><a href="https://youtu.be/DJ2XPuD3ObQ" target="_blank">Twinkle Variation D</a></li>
+                      <li><a href="https://youtu.be/LARILIjG8OI" target="_blank">Twinkle Variation E</a></li>
+                      <li><a href="https://youtu.be/63N56aTq9QM" target="_blank">Twinkle Theme</a></li>
+                      <li><a href="https://youtu.be/5crwWN2eSbc" target="_blank">Lightly Row</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+  </main>
+
+  <footer class="mt-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-2">
+          <ul class="list-unstyled">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="music.html">Music</a></li>
+            <li><a class="nav-link" href="#">Students</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-10 text-right">
+          <a role="button" class="btn btn-link" href="tel:+7194477237">
+            <p><i class="fa fa-phone"></i>
+              1-719-447-7237</p>
+          </a><br />
+          <a role="button" class="btn btn-link" href="mailto:ross.birdsall9@gmail.com">
+            <p><i class="fa fa-envelope-o"></i> ross.birdsall9@gmail.com</p>
+          </a><br />
+          <a role="button" class="btn btn-link" href="https://www.linkedin.com/in/ross-birdsall-85950311b/">
+            <p>Website by Ross Birdsall</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- build:js js/main.js -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <!-- endbuild -->
 
 </body>
 
